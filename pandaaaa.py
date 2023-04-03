@@ -87,3 +87,14 @@ rs =pd.read_csv('nba.csv')
 new_rs = rs.dropna()
 
 print(new_rs.to_string())
+
+
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv('nba.csv')
+
+df.plot( x ='Name', y='Age', kind = 'bar')
+
+plt.show()

@@ -73,3 +73,17 @@ dd = pd.read_csv('nba.csv')
 print(dd.head())
 
 print(dd.tail())
+
+
+#data cleaning 
+# examples of bad data 
+# Empty cells
+# Data in wrong format
+# Wrong data
+# Duplicates
+
+rs =pd.read_csv('nba.csv')
+
+new_rs = rs.dropna()
+
+print(new_rs.to_string())

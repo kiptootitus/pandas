@@ -95,6 +95,15 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv('nba.csv')
 
-df.plot( x ='Name', y='Age', kind = 'bar')
+df.plot()
+
+plt.show()
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv('data.csv')
+
+df.plot( kind = 'bar' )
 
 plt.show()
